@@ -6,7 +6,7 @@
 
 ---
 
-<img src="https://raw.githubusercontent.com/xarray-contrib/xdggs/main/docs/_static/logos/xdggs_logo.png" width="300" height="300" margin="0" /><br/>
+<img src="https://raw.githubusercontent.com/xarray-contrib/xdggs/main/docs/_static/logos/xdggs_logo.png" width="259" height="300" margin="0" /><br/>
 
 # xdggs: discrete global grid systems with xarray
 
@@ -51,8 +51,7 @@ ds_idx = ds.pipe(xdggs.decode)
 ds_idx = ds_idx.dggs.assign_latlon_coords()
 
 # Interactive visualization
-ds_idx['air'].isel(time=0).compute().dggs.explore(center=0, cmap="viridis", alpha=0.5)
-
+ds_idx["air"].isel(time=0).compute().dggs.explore(center=0, cmap="viridis", alpha=0.5)
 ```
 
 ## Roadmap
